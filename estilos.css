@@ -1,0 +1,47 @@
+/* en :root variables globales en todo el html */
+:root{
+
+    /* 
+        Declaro la variable naranja 
+        y ademas le asgno el valor #FF9600 (naranja)
+    */
+    --naranja: #FF9600;
+    --negro: #000000;
+    --gris: #333333;
+    --blanco: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris);
+    background-color: url(/images/pattern.jpg);
+    font-family: Arial, sans-serif;
+}
+
+
+.cabecera, .contenedor{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.cabecera{
+    color: var(--naranja);
+    display: flex;
+    justify-content: space-between; /* alinea los dos al costado */
+    align-items: center; /* Centramos en vertical los 2 elementos */
+    padding: 15px 0;
+    font-size: 16px;
+
+}
+
+.contenedor{    
+    /* Aplico la variable como color de fondo usando var() */
+    background-color: var(--blanco);
+
+}

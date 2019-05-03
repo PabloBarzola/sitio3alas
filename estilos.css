@@ -41,6 +41,13 @@ body {
     font-size: 16px;
 }
 
+
+/**
+    -----------------------------------------------------------------
+    MENU HORIZONTAL
+    -----------------------------------------------------------------
+*/
+
 .contenedor{    
     /* Aplico la variable como color de fondo usando var() */
     background-color: var(--blanco);
@@ -65,13 +72,11 @@ body {
     padding-left: 40px;    
 }
 
-
-
 .nav a{
-    background-color: green;
+    /*background-color: green;*/
     display: block;
 
-    border-right: 2px solid var(--blanco);
+    border-right: 1px solid var(--blanco);
     color: var(--blanco);
     font-weight: bold;
     text-decoration: none;
@@ -83,10 +88,8 @@ body {
 
 .nav a:hover{
     text-decoration: underline;
-    background-color: brown;
+    /*background-color: brown;*/
 }
-
-
 
 
 /**
@@ -102,15 +105,23 @@ body {
     margin-bottom: 48px;
 }
 
+/**
+    -----------------------------------------------------------------
+    PRICIPAL
+    -----------------------------------------------------------------
+*/
+
 .principal{
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-gap: 35px;
 }
 
+/*
 .cat{
     background-color: violet;
 }
+*/
 
 .cat-title{
     margin-bottom: 10px;
@@ -131,7 +142,6 @@ body {
 
 .cat-list a:hover{
     text-decoration: none;
-
 }
 
 .productos{

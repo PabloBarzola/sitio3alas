@@ -1,10 +1,5 @@
 /* en :root variables globales en todo el html */
-:root{
-
-    /* 
-        Declaro la variable naranja 
-        y ademas le asgno el valor #FF9600 (naranja)
-    */
+:root{    
     --naranja: #FF9600;
     --negro: #000000;
     --gris: #333333;
@@ -19,7 +14,7 @@
 
 body {
     background-color: var(--gris);
-    background-color: url(/images/pattern.jpg);
+    background-image: url(images/pattern.jpg);
     font-family: Arial, sans-serif;
 }
 
@@ -37,11 +32,55 @@ body {
     align-items: center; /* Centramos en vertical los 2 elementos */
     padding: 15px 0;
     font-size: 16px;
-
 }
 
 .contenedor{    
     /* Aplico la variable como color de fondo usando var() */
     background-color: var(--blanco);
+}
 
+.nav{
+    background-color:  purple;
+    /* Separo usando el nav así me llevo
+    el margen a todas las páginas */
+    margin-bottom: 30px;
+   
+   
+}
+
+.nav-lista{
+    /* Eliminamos los puntitos de la lista */
+    list-style: none;
+    text-align: center;
+    background-color: var(--naranja);
+    display: flex;
+    padding: 10px 0;
+    padding-left: 40px;    
+}
+
+
+
+.nav a{
+    background-color: green;
+    display: block;
+
+    border-right: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-weight: bold;
+    text-decoration: none;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.nav a:hover{
+    text-decoration: underline;
+    background-color: brown;
+}
+
+.slider{
+    /* Para centrar imagenes aplico
+    text-align center al elemento padre */
+    text-align: center;
 }

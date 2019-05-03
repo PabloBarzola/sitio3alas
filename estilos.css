@@ -4,6 +4,7 @@
     --negro: #000000;
     --gris: #333333;
     --blanco: #FFFFFF;
+    --grisClaro: #666666;
 }
 
 *{
@@ -24,6 +25,12 @@ body {
     margin: 0 auto;
     
 }
+
+/**
+    -----------------------------------------------------------------
+    SECCION CABECERA
+    -----------------------------------------------------------------
+*/
 
 .cabecera{
     color: var(--naranja);
@@ -79,8 +86,54 @@ body {
     background-color: brown;
 }
 
+
+
+
+/**
+    -----------------------------------------------------------------
+    SLIDER
+    -----------------------------------------------------------------
+*/
+
 .slider{
     /* Para centrar imagenes aplico
     text-align center al elemento padre */
     text-align: center;
+    margin-bottom: 48px;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 35px;
+}
+
+.cat{
+    background-color: violet;
+}
+
+.cat-title{
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.cat-list{
+    list-style: none;
+    padding-left: 35px;
+}
+
+.cat-list a{
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--grisClaro);
+    color: var(--negro);    
+}
+
+.cat-list a:hover{
+    text-decoration: none;
+
+}
+
+.productos{
+    background-color: skyblue;
 }
